@@ -7,17 +7,23 @@ body {
 
 /*for Tablet resolution 769px*/
 @media only screen and (min-width: 769px){
-    #first_page_container, #second_page_container, #third_page_container {
+    #first_page_container, #second_page_container, #third_page_container, #Manage_meter_container {
         width: auto;
     }
     #first_page_container {
         background: linear-gradient(-45deg, rgba(212, 183, 89, 0.945),rgba(116, 134, 138, 0.959));
     }
     #second_page_container {
-        background: linear-gradient(-45deg, rgba(67, 126, 121, 0.445), rgba(188, 197, 209, 0.842));
+        background: rgb(142, 156, 141);
+        font-family: 'Trebuchet MS';
     }
     #third_page_container {
-        background-color: #644450;
+        background-color: #6d8170;
+        font-family: 'Trebuchet MS';
+    }
+    #Manage_meter_container {
+        background: linear-gradient(-45deg, #778a79, rgba(188, 197, 209, 0.842));
+        font-family: 'Trebuchet MS';
     }
     nav{background-color: #333;
         height: 23px;
@@ -78,10 +84,10 @@ body {
     .create_account_0{
         margin: 35px 80px auto 80px;
         border: solid 1px #34878a;
-        background-color: #f1f1f1;
+        background-color: #dfdbdbad;
         border-radius: 8px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        height: 570px;
+        height: 560px;
     }
     #create_account_header{
         text-align: left;
@@ -138,7 +144,7 @@ body {
         background-color:  rgb(45, 124, 160);
         border-radius: 4px;
         display: block;
-        margin-top: 475px;
+        margin-top: 470px;
         margin-left: 53px;
         position: absolute;
     }
@@ -150,18 +156,23 @@ body {
         margin-top: 30px;
     }
     .form-header {
-        font-size: 12px;
-        font-weight: 600;
-        text-align: center;
-        background-color: #bfc5c7;
+        font-size: 20px;
+        text-align: left;
+        background-color: #f2f2f2;
         padding-top: 2px;
         margin-left: 376px;
         margin-top: 50px;
         margin-right: 376px;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
-        padding-top: 0px;
-        height: 18px;
+        border-bottom-color: rgb(77, 160, 163);
+        border-bottom-style: solid;
+        padding: 0px 95px;
+        height: 45px;
+    }
+    .form-header > p {
+        padding-top: 6px;
+        color: rgb(77, 160, 163);
     }
     #reg_container{
         margin-left: 375px;
@@ -185,29 +196,41 @@ body {
     div.block_1_2 > div, div.block_2_2 > div {
     margin-top: 7px;
     }
+    div.block_1_2 label, div.block_2_2 label {
+        color: #177c80;
+        }
     .button_add{
         font-size: 10px;
         width: 8%;
-        height: 24px;
+        height: 29px;
         margin-top: 10px;
         position: absolute;
         background-color:  rgb(45, 124, 160);
         border-radius: 5px;
     }
+/* Meter Management Page*/
+    
+
 }
 /*for Tablet resolution 768px*/
 @media only screen and (max-width: 768px){
-    #first_page_container, #second_page_container, #third_page_container {
+    #first_page_container, #second_page_container, #third_page_container, #Manage_meter_container {
         width: auto;
     }
     #first_page_container {
         background: linear-gradient(-45deg, rgba(212, 183, 89, 0.945),rgba(116, 134, 138, 0.959));
     }
     #second_page_container {
-        background: linear-gradient(-45deg, rgba(67, 126, 121, 0.445), rgba(188, 197, 209, 0.842));
+        background: rgb(142, 156, 141);
+        font-family: 'Trebuchet MS';
     }
     #third_page_container {
-        background-color: #644450;
+        background-color: #6d8170;
+        font-family: 'Trebuchet MS';
+    }
+    #Manage_meter_container {
+        background: linear-gradient(-45deg, #778a79, rgba(188, 197, 209, 0.842));
+        font-family: 'Trebuchet MS';
     }
     nav{background-color: #333;
         height: 23px;
@@ -268,7 +291,7 @@ body {
     .create_account_0{
         margin: 35px 80px auto 80px;
         border: solid 1px #34878a;
-        background-color: #f1f1f1;
+        background-color: #dfdbdbad;
         border-radius: 8px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         height: 970px;
@@ -330,18 +353,23 @@ body {
         margin-top: 30px;
     }
     .form-header {
-        font-size: 12px;
-        font-weight: 600;
-        text-align: center;
-        background-color: #bfc5c7;
+        font-size: 20px;
+        text-align: left;
+        background-color: #f1f1f1;
         padding-top: 2px;
         margin-left: auto;
         margin-top: 50px;
         margin-right: auto;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
-        padding-top: 0px;
-        height: 18px;
+        border-bottom-color: rgb(77, 160, 163);
+        border-bottom-style: solid;
+        padding: 0px 95px;
+        height: 35px;
+    }
+    .form-header > p {
+        padding-top: 5px;
+        color: rgb(77, 160, 163);
     }
     #reg_container{
         margin-left: auto;
@@ -365,6 +393,9 @@ body {
     div.block_1_2 > div, div.block_2_2 > div {
     margin-top: 7px;
     }
+    div.block_1_2 label, div.block_2_2 label {
+        color: #177c80;
+        }
     .button_add{
         font-size: 10px;
         width: 8%;
@@ -377,17 +408,23 @@ body {
 }
 /*for Tablet resolution 425px*/
 @media only screen and (max-width: 425px){
-    #first_page_container, #second_page_container, #third_page_container {
+    #first_page_container, #second_page_container, #third_page_container, #Manage_meter_container {
         width: auto;
     }
     #first_page_container {
         background: linear-gradient(-45deg, rgba(212, 183, 89, 0.945),rgba(116, 134, 138, 0.959));
     }
     #second_page_container {
-        background: linear-gradient(-45deg, rgba(67, 126, 121, 0.445), rgba(188, 197, 209, 0.842));
+        background: rgb(142, 156, 141);
+        font-family: 'Trebuchet MS';
     }
     #third_page_container {
-        background-color: #644450;
+        background-color: #6d8170;
+        font-family: 'Trebuchet MS';
+    }
+    #Manage_meter_container {
+        background: linear-gradient(-45deg, #778a79, rgba(188, 197, 209, 0.842));
+        font-family: 'Trebuchet MS';
     }
     nav{background-color: #333;
         height: 23px;
@@ -445,15 +482,14 @@ body {
     }
     .create_account_header_layout {
         margin-left: 0px;
-        color: rgba(61, 48, 48, 0.849);
     }
     .create_account_0{
         margin: 35px 80px auto 80px;
         border: solid 1px #34878a;
-        background-color: #f1f1f1;
+        background-color: #dfdbdbad;
         border-radius: 8px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        height: 970px;
+        height: 1020px;
     }
     #create_account_header{
         text-align: left;
@@ -465,7 +501,7 @@ body {
         color: rgb(97, 52, 52);
     }
     .form_layout{
-        margin-left: 00px;
+        margin-left: 20px;
     }
     input{
         display: block;
@@ -512,18 +548,23 @@ body {
         margin-top: 30px;
     }
     .form-header {
-        font-size: 12px;
-        font-weight: 600;
-        text-align: center;
-        background-color: #bfc5c7;
+        text-align: left;
+        background-color: #f1f1f1;
         padding-top: 2px;
         margin-left: auto;
         margin-top: 50px;
         margin-right: auto;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
-        padding-top: 0px;
-        height: 18px;
+        border-bottom-color: rgb(77, 160, 163);
+        border-bottom-style: solid;
+        padding: 0px 95px;
+        height: 35px;
+    }
+    .form-header > p {
+        padding-top: 5px;
+        font-size:18px;
+        color: rgb(77, 160, 163);
     }
     #reg_container{
         margin-left: auto;
@@ -547,6 +588,9 @@ body {
     div.block_1_2 > div, div.block_2_2 > div {
     margin-top: 7px;
     }
+    div.block_1_2 label, div.block_2_2 label {
+        color: #177c80;
+        }
     .button_add{
         font-size: 10px;
         width: 8%;
